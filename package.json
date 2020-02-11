@@ -29,5 +29,13 @@
     "cssnano": "^4.1.10",
     "flexboxgrid": "^6.3.1",
     "normalize.css": "^8.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devlegacy/droner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/devlegacy/droner/issues"
+  },
+  "homepage": "https://github.com/devlegacy/droner#readme"
 }
