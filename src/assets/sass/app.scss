@@ -1,0 +1,245 @@
+@charset 'UTF-8';
+@import './base/base';
+
+body {
+  overflow-x: hidden;
+
+  background: $iron;
+
+  font-family: $font;
+}
+
+.header {
+  margin-top: $top-header;
+
+  &__logo {
+    display: block;
+  }
+
+  &__slogan {
+    display: block;
+    margin-bottom: 20px;
+
+    color: $bony-clay;
+
+    font-size: $slogan;
+  }
+}
+
+.nav {
+  display: flex;
+
+  list-style-type: none;
+
+  justify-content: flex-end;
+
+  &__item {
+    color: $bony-clay;
+  }
+
+  &__link {
+    padding: $top-nav-padding;
+
+    color: $bony-clay;
+
+    font-size: $nav-item;
+    text-transform: uppercase;
+  }
+}
+
+.content {
+  width: 100%;
+  height: 550px;
+  overflow: visible;
+
+  background: url(/assets/img/hero.jpg) no-repeat;
+  background-size: cover;
+
+  &__feature {
+    display: inline-block;
+    padding: 0 5px;
+    margin-top: $feature-padding;
+    margin-bottom: 0;
+
+    background: $guardsman-red;
+    color: #fff;
+
+    font-size: $feature;
+    line-height: 1.6;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin: 10px 0;
+
+    color: #fff;
+
+    font-size: $content-title;
+    font-weight: 300;
+  }
+
+  &__summary {
+    margin-bottom: 70px;
+
+    color: $hit-gray;
+
+    font-size: $content-summary;
+  }
+}
+
+.gallery {
+  &-container {
+    columns: 3;
+  }
+
+  .card {
+    width: 230px;
+    padding: $gallery-padding;
+    margin-bottom: 15px;
+
+    background: $white;
+
+    transition: .18s transform ease-in;
+
+    break-inside: avoid;
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &__img {
+      width: 100%;
+    }
+
+    &__title {
+      display: block;
+      margin: $gallery-margin-inner;
+
+      color: $bony-clay;
+
+      font-size: $article-titles;
+      line-height: $article-titles-lh;
+    }
+
+    &__content {
+      margin: $gallery-margin-inner;
+
+      color: $bony-clay;
+
+      font-size: $article-subtitles;
+    }
+
+    &__helper {
+      color: $guardsman-red;
+    }
+  }
+}
+
+.sidebar {
+  padding: 12px 15px;
+
+  background-color: $hit-gray;
+
+  &__header {
+    display: flex;
+    margin-top: 10px;
+
+    justify-content: space-between;
+  }
+
+  &__title {
+    // float: left;
+    // display: inline;
+    font-size: $sidebar-titles;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__nav {
+    margin: 10px 0 0 0;
+
+    text-align: left;
+
+    list-style-type: none;
+  }
+
+  &__link {
+    color: #000;
+
+    font-size: $forum-title;
+  }
+
+  &__span {
+    display: block;
+    margin: 2px 0 12px 0;
+
+    color: $mako;
+
+    font-size: $forum-auth;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (max-width: 64.0625em) {
+  .header {
+    margin-top: $top-header-mobile;
+    margin-bottom: $top-header-mobile;
+    &__slogan {
+      display: none;
+    }
+  }
+  .nav {
+    &__link {
+      font-size: $nav-items-mobile;
+    }
+  }
+
+  .content {
+    padding: 0 20px;
+
+    &__feature {
+      margin-top: 30px;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+
+      font-size: $content-title-mobile	;
+      line-height: 1em;
+    }
+
+    &__summary {
+      font-size: $content-summary-mobile;
+    }
+  }
+
+  .gallery {
+    &-container {
+      columns: 2;
+    }
+
+    .card {
+      width: 100%;
+    }
+  }
+
+  .sidebar {
+    margin-top: -30%;
+  }
+}
+
+@media only screen and (max-width: 34.0625em) {
+  .header {
+    margin-top: $top-header-phone;
+    margin-bottom: $top-header-phone;
+  }
+
+  .gallery {
+    &-container {
+      columns: 1;
+    }
+  }
+
+  .sidebar {
+    margin-top: 0;
+  }
+}

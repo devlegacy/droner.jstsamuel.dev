@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.no-link {
+  color: inherit;
+
+  text-decoration: inherit;
+
+  outline: inherit;
+  // &:link {
+  //   color: inherit;
+
+  //   outline: none;
+  // }
+
+  // &:visited {
+  //   color: inherit;
+
+  //   outline: none;
+  // }
+
+  // &:focus {
+  //   color: inherit;
+
+  //   outline: none;
+  // }
+
+  // &:hover {
+  //   color: inherit;
+
+  //   outline: none;
+  // }
+
+  // &:active {
+  //   color: inherit;
+
+  //   outline: none;
+  // }
+}
