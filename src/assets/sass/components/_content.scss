@@ -1,0 +1,39 @@
+.content {
+  width: 100%;
+  height: 550px;
+  overflow: visible;
+
+  background: url(/assets/img/hero.jpg) no-repeat;
+  background-size: cover;
+
+  &__feature {
+    display: inline-block;
+    padding: 0 5px;
+    margin-top: $feature-padding;
+    margin-bottom: 0;
+
+    background: $guardsman-red;
+    color: #fff;
+
+    font-size: $feature;
+    line-height: 1.6;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin: 10px 0;
+
+    color: #fff;
+
+    font-size: $content-title;
+    font-weight: 300;
+  }
+
+  &__summary {
+    margin-bottom: 70px;
+
+    color: $hit-gray;
+
+    font-size: $content-summary;
+  }
+}

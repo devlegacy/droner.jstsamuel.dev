@@ -1,5 +1,9 @@
 {
-  "exclude": [".git/**", "node_modules/**", "bower_components/**"],
+  "exclude": [
+    ".git/**",
+    "node_modules/**",
+    "bower_components/**"
+  ],
   "remove-empty-rulesets": true,
   "always-semicolon": true,
   "color-case": "lower",
@@ -33,12 +37,32 @@
       "__text",
       "__Other"
     ],
-    ["__Sass_sintaxis"],
-    ["$variable"],
-    ["$include", "$import"],
-    ["__Positioning"],
-    ["position", "top", "right", "bottom", "left", "z-index", "float", "clear"],
-    ["__Display_&_Box_Model"],
+    [
+      "__Sass_sintaxis"
+    ],
+    [
+      "$variable"
+    ],
+    [
+      "$include",
+      "$import"
+    ],
+    [
+      "__Positioning"
+    ],
+    [
+      "position",
+      "top",
+      "right",
+      "bottom",
+      "left",
+      "z-index",
+      "float",
+      "clear"
+    ],
+    [
+      "__Display_&_Box_Model"
+    ],
     [
       "display",
       "box-sizing",
@@ -97,7 +121,9 @@
       "overflow-x",
       "overflow-y"
     ],
-    ["__color"],
+    [
+      "__color"
+    ],
     [
       "background",
       "background-color",
@@ -112,7 +138,9 @@
       "background-origin",
       "color"
     ],
-    ["__text"],
+    [
+      "__text"
+    ],
     [
       "font",
       "font-family",
@@ -154,7 +182,9 @@
       "tab-size",
       "hyphens"
     ],
-    ["__Other"],
+    [
+      "__Other"
+    ],
     [
       "content",
       "cursor",

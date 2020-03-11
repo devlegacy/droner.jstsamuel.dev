@@ -1,0 +1,46 @@
+.gallery {
+  &-container {
+    columns: 3;
+  }
+
+  .card {
+    width: 230px;
+    padding: $gallery-padding;
+    margin-bottom: 15px;
+
+    background: $white;
+
+    transition: .18s transform ease-in;
+
+    break-inside: avoid;
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &__img {
+      width: 100%;
+    }
+
+    &__title {
+      display: block;
+      margin: $gallery-margin-inner;
+
+      color: $bony-clay;
+
+      font-size: $article-titles;
+      line-height: $article-titles-lh;
+    }
+
+    &__content {
+      margin: $gallery-margin-inner;
+
+      color: $bony-clay;
+
+      font-size: $article-subtitles;
+    }
+
+    &__helper {
+      color: $guardsman-red;
+    }
+  }
+}

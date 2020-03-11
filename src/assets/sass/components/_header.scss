@@ -1,0 +1,11 @@
+.header {
+  margin-top: $top-header;
+
+  &__slogan {
+    margin-bottom: 20px;
+
+    color: $bony-clay;
+
+    font-size: $slogan;
+  }
+}
