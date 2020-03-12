@@ -1419,8 +1419,7 @@ body {
 /* Components layer */
 .header {
   display: grid;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin: 15px auto 15px;
 }
 .header__slogan {
   display: none;
@@ -1432,28 +1431,48 @@ body {
     margin-bottom: 25px;
   }
 }
+@media only screen and (min-width: 48em) {
+  .header {
+    width: 49rem;
+    grid-template-columns: max-content 1fr;
+  }
+}
+@media only screen and (min-width: 64em) {
+  .header {
+    width: 65rem;
+  }
+}
 @media only screen and (min-width: 64.0625em) {
   .header {
     margin-top: 60px;
     margin-bottom: 20px;
-    grid-template-columns: max-content 1fr;
   }
   .header__slogan {
     display: block;
   }
 }
+@media only screen and (min-width: 75em) {
+  .header {
+    width: 76rem;
+  }
+}
 .nav {
   display: flex;
   list-style-type: none;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 .nav__item {
   color: #223237;
 }
 .nav__link {
+  display: block;
   padding: 0 21px;
   font-size: 0.8em;
+  text-align: center;
   text-transform: uppercase;
+}
+.nav__link:hover {
+  background: #f0f0f0;
 }
 .nav__text {
   display: none;
@@ -1462,6 +1481,11 @@ body {
 @media only screen and (min-width: 354px) {
   .nav__text {
     display: inline;
+  }
+}
+@media only screen and (min-width: 34.0625em) {
+  .nav {
+    justify-content: flex-end;
   }
 }
 @media only screen and (min-width: 64.0625em) {

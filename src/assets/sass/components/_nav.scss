@@ -3,17 +3,22 @@
 
   list-style-type: none;
 
-  justify-content: flex-end;
+  justify-content: space-between;
 
   &__item {
     color: $text-nav-item-color;
   }
 
   &__link {
+    display: block;
     padding: $top-nav-padding;
 
     font-size: $nav-items-mobile;
+    text-align: center;
     text-transform: uppercase;
+    &:hover {
+      background: $gallery;
+    }
   }
 
   &__text {
@@ -26,6 +31,12 @@
     &__text {
       display: inline;
     }
+  }
+}
+
+@media only screen and (min-width: 34.0625em) {
+  .nav {
+    justify-content: flex-end;
   }
 }
 

@@ -1,7 +1,7 @@
 .header {
   display: grid;
-  margin-top: $top-header-phone;
-  margin-bottom: $top-header-phone;
+  margin: $top-header-margin auto $top-header-margin;
+
   &__slogan {
     display: none;
   }
@@ -9,19 +9,38 @@
 
 @media only screen and (min-width: 34.0625em) {
   .header {
-    margin-top: $top-header-mobile;
-    margin-bottom: $top-header-mobile;
+    margin-top: $top-header-mobile-margin;
+    margin-bottom: $top-header-mobile-margin;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .header {
+    width: 49rem;
+
+    grid-template-columns: max-content 1fr;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  .header {
+    width: 65rem;
   }
 }
 
 @media only screen and (min-width: 64.0625em) {
   .header {
-    margin-top: $top-header;
-    margin-bottom: 20px;
+    margin-top: $top-header-desktop-margin;
+    margin-bottom: $bottom-desktop-margin;
 
-    grid-template-columns: max-content 1fr;
     &__slogan {
       display: block;
     }
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .header {
+    width: 76rem;
   }
 }
