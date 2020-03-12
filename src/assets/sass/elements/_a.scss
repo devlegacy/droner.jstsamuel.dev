@@ -1,0 +1,12 @@
+// Example
+a,
+a:link,
+a:visited {
+  color: $alternate-text-color;
+
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

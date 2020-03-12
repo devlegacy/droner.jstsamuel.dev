@@ -1,6 +1,34 @@
+/**
+ * Colors hex name
+ * Example: http://chir.ag/projects/name-that-color/#6195ED
+ */
 $iron: #ced1d3;
 $bony-clay: #223237;
 $guardsman-red: #ca0000;
 $hit-gray: #a8b4b9;
 $white: #fff;
 $mako: #414a4f;
+$madison: #082c5c;
+$haiti: #0e0a23;
+$loulou: #4a113c;
+$science-blue: #0777d9;
+$gallery: #f0f0f0;
+$red-ribbon: #e60330;
+
+
+// Colors vars; examples
+$border-color: $madison;
+$default-text-color: $haiti;
+$bar-background-color: $loulou;
+$default-background-color: $science-blue;
+$gradient-background-color: rgba($bar-background-color, .3);
+$button-face-color: $gallery;
+$button-hover-background-color: $red-ribbon;
+$alternate-text-color: $white;
+
+// Colors vars
+$background-color: $iron;
+
+// Text
+$text-slogan-color: $bony-clay;
+$text-nav-item-color: $bony-clay;

@@ -1,0 +1,27 @@
+/**
+ * Example of columns mixin
+ */
+@mixin column($side) {
+  @include mobile {
+    width: 100%;
+  }
+  @include desktop {
+    @if $side == 'left' {
+      width: $left-column-width;
+      margin-right: $default-horizontal-margin;
+    }
+    @else {
+      width: $right-column-width;
+    }
+  }
+
+  display: inline-block;
+  padding: $default-padding;
+  border: $default-border;
+  border-radius: $border-radius;
+
+  background-color: $gradient-background-color;
+  color: $default-text-color;
+
+  vertical-align: top;
+}

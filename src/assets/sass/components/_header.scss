@@ -1,11 +1,27 @@
 .header {
-  margin-top: $top-header;
-
+  display: grid;
+  margin-top: $top-header-phone;
+  margin-bottom: $top-header-phone;
   &__slogan {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 34.0625em) {
+  .header {
+    margin-top: $top-header-mobile;
+    margin-bottom: $top-header-mobile;
+  }
+}
+
+@media only screen and (min-width: 64.0625em) {
+  .header {
+    margin-top: $top-header;
     margin-bottom: 20px;
 
-    color: $bony-clay;
-
-    font-size: $slogan;
+    grid-template-columns: max-content 1fr;
+    &__slogan {
+      display: block;
+    }
   }
 }
