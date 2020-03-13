@@ -1,6 +1,7 @@
 .header {
   display: grid;
-  margin: $top-header-margin auto $top-header-margin;
+  max-width: 100%;
+  margin: $header-vertical-margin auto $header-vertical-margin;
 
   &__slogan {
     display: none;
@@ -9,38 +10,24 @@
 
 @media only screen and (min-width: 34.0625em) {
   .header {
-    margin-top: $top-header-mobile-margin;
-    margin-bottom: $top-header-mobile-margin;
+    margin-top: $header-mobile-vertical-margin;
+    margin-bottom: $header-mobile-vertical-margin;
   }
 }
 
 @media only screen and (min-width: 48em) {
   .header {
-    width: 49rem;
-
     grid-template-columns: max-content 1fr;
-  }
-}
-
-@media only screen and (min-width: 64em) {
-  .header {
-    width: 65rem;
   }
 }
 
 @media only screen and (min-width: 64.0625em) {
   .header {
-    margin-top: $top-header-desktop-margin;
-    margin-bottom: $bottom-desktop-margin;
+    margin-top: $header-desktop-top-margin;
+    margin-bottom: $header-desktop-bottom-margin;
 
     &__slogan {
       display: block;
     }
-  }
-}
-
-@media only screen and (min-width: 75em) {
-  .header {
-    width: 76rem;
   }
 }

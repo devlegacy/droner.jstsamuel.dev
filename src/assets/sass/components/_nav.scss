@@ -1,24 +1,25 @@
 .nav {
   display: flex;
 
+  text-shadow: 1px 1px 2px rgba(0,0,0,.2);
+
   list-style-type: none;
 
   justify-content: space-between;
-
   &__item {
     color: $text-nav-item-color;
+    &:hover {
+      background: $text-nav-item-hover-color;
+    }
   }
 
   &__link {
     display: block;
-    padding: $top-nav-padding;
+    padding: 0 10px;
 
-    font-size: $nav-items-mobile;
+    font-size: $nav-link-font-size;
     text-align: center;
     text-transform: uppercase;
-    &:hover {
-      background: $gallery;
-    }
   }
 
   &__text {
@@ -37,13 +38,17 @@
 @media only screen and (min-width: 34.0625em) {
   .nav {
     justify-content: flex-end;
+
+    &__link {
+      padding: $nav-spacing-padding;
+    }
   }
 }
 
 @media only screen and (min-width: 64.0625em) {
   .nav {
     &__link {
-      font-size: $nav-item-font-size;
+      font-size: $nav-link-desktop-font-size;
     }
   }
 }

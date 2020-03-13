@@ -1,8 +1,4 @@
-$font-size-base: 1rem !default;
-$slogan: .9em;
-$nav-item: .95em;
-$nav-items-mobile: .8em;
-$feature: .8em;
+$base-font-size: 1rem !default;
 $content-title: 4em;
 $content-title-mobile: 2.5em;
 $content-summary: 1.5em;
@@ -15,7 +11,11 @@ $forum-title: .95em;
 $forum-auth: .85em;
 // Font-sizes
 $slogan-font-size: .9em;
-$nav-item-font-size: .95em;
+$nav-link-desktop-font-size: .95em;
+$nav-link-font-size: .8em;
+$feature-font-size: .8em;
+$feature-title-font-size: 2.5em;
+$feature-summary-font-size: 1.2em;
 // Examples:
 $base-font-size: 16px;
 $header-font-size: 3rem;
