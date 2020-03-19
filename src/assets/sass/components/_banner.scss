@@ -5,8 +5,9 @@
   overflow: visible;
 
   background: url(/assets/img/hero.jpg) no-repeat;
+  // background-attachment: fixed;
   background-size: cover;
-  background-position: top center;
+  background-position: center center;
   color: $text-banner-color;
 
   &__feature {
@@ -15,9 +16,9 @@
     margin-top: 30px;
     margin-bottom: 0;
 
-    background: $guardsman-red;
+    background: $banner-feature-background-color;
 
-    font-size: $feature-font-size;
+    font-size: $banner-feature-font-size;
     line-height: 1.6;
     text-transform: uppercase;
   }
@@ -25,7 +26,7 @@
   &__title {
     margin: 10px 0 20px 0;
 
-    font-size: $feature-title-font-size;
+    font-size: $banner-title-font-size;
     font-weight: 300;
     line-height: 1em;
   }
@@ -35,18 +36,27 @@
 
     color: $text-banner-summary-color;
 
-    font-size: $feature-summary-font-size;
+    font-size: $banner-summary-font-size;
   }
 }
 
 @media only screen and (min-width: 64.0625em) {
   .banner {
+    padding: 0;
+
     &__title {
-      font-size: 4em;
+      margin: 10px 0;
+
+      font-size: $banner-title-desktop-font-size;
+      line-height: 1.15;
     }
 
     &__feature {
       margin-top: 95px;
+    }
+
+    &__summary {
+      font-size: $banner-summary-desktop-font-size;
     }
   }
 }

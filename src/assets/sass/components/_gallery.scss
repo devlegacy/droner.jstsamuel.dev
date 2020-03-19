@@ -1,18 +1,24 @@
 .gallery {
+  display: grid;
+  // break-inside: avoid;
+
+  columns: 1;
   &-container {
-    columns: 3;
+    // break-inside: avoid;
   }
 
   .card {
-    width: 230px;
-    padding: $gallery-padding;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1),
+    0 4px 6px -2px rgba(0, 0, 0, .05);
+    width: 100%;
+    padding: $card-padding;
     margin-bottom: 15px;
 
-    background: $white;
+    background: $card-background-color;
 
     transition: .18s transform ease-in;
 
-    break-inside: avoid;
+    // break-inside: avoid;
     &:hover {
       transform: scale(1.05);
     }
@@ -23,24 +29,49 @@
 
     &__title {
       display: block;
-      margin: $gallery-inner-margin;
+      margin: $card-text-inner-margin;
 
-      color: $bony-clay;
+      color: $text-card-title-color;
 
-      font-size: $article-titles;
-      line-height: $article-titles-lh;
+      font-size: $card-title-font-size;
+      line-height: $card-title-line-height;
     }
 
     &__content {
-      margin: $gallery-inner-margin;
+      margin: $card-text-inner-margin;
 
-      color: $bony-clay;
+      color: $text-card-content-color;
 
-      font-size: $article-subtitles;
+      font-size: $card-content-font-size;
     }
 
     &__helper {
-      color: $guardsman-red;
+      color: $text-card-helper-color;
     }
+  }
+}
+
+@media only screen and (min-width: 34.0625em) {
+  .gallery {
+    &-container {
+      columns: 2;
+    }
+  }
+}
+
+@media only screen and (min-width: 64.0625em) {
+  .gallery {
+    .card {
+      max-width: 230px;
+    }
+    &-container {
+      columns: 3;
+    }
+  }
+
+  .grid {
+    display: grid;
+
+    grid-template-columns: 7fr 3fr;
   }
 }

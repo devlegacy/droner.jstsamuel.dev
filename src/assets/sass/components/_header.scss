@@ -1,17 +1,20 @@
 .header {
   display: grid;
   max-width: 100%;
-  margin: $header-vertical-margin auto $header-vertical-margin;
+  margin: $header-vertical-margin auto;
 
   &__slogan {
     display: none;
+
+    color: $text-slogan-color;
+
+    font-size: $slogan-font-size;
   }
 }
 
 @media only screen and (min-width: 34.0625em) {
   .header {
-    margin-top: $header-mobile-vertical-margin;
-    margin-bottom: $header-mobile-vertical-margin;
+    margin: $header-mobile-vertical-margin auto;
   }
 }
 
@@ -23,8 +26,7 @@
 
 @media only screen and (min-width: 64.0625em) {
   .header {
-    margin-top: $header-desktop-top-margin;
-    margin-bottom: $header-desktop-bottom-margin;
+    margin: $header-desktop-top-margin auto $header-desktop-bottom-margin;
 
     &__slogan {
       display: block;

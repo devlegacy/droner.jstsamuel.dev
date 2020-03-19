@@ -1420,16 +1420,17 @@ body {
 .header {
   display: grid;
   max-width: 100%;
-  margin: 15px auto 15px;
+  margin: 15px auto;
 }
 .header__slogan {
   display: none;
+  color: #223237;
+  font-size: 0.9em;
 }
 
 @media only screen and (min-width: 34.0625em) {
   .header {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin: 25px auto;
   }
 }
 @media only screen and (min-width: 48em) {
@@ -1439,8 +1440,7 @@ body {
 }
 @media only screen and (min-width: 64.0625em) {
   .header {
-    margin-top: 60px;
-    margin-bottom: 20px;
+    margin: 60px auto 20px;
   }
   .header__slogan {
     display: block;
@@ -1454,12 +1454,13 @@ body {
 }
 .nav__item {
   color: #223237;
+  transition: background 0.34s ease;
 }
 .nav__item:hover {
   background: #f0f0f0;
 }
 .nav__link {
-  display: block;
+  display: inline-block;
   padding: 0 10px;
   font-size: 0.8em;
   text-align: center;
@@ -1494,7 +1495,7 @@ body {
   overflow: visible;
   background: url(/assets/img/hero.jpg) no-repeat;
   background-size: cover;
-  background-position: top center;
+  background-position: center center;
   color: #fff;
 }
 .banner__feature {
@@ -1520,23 +1521,32 @@ body {
 }
 
 @media only screen and (min-width: 64.0625em) {
+  .banner {
+    padding: 0;
+  }
   .banner__title {
+    margin: 10px 0;
     font-size: 4em;
+    line-height: 1.15;
   }
   .banner__feature {
     margin-top: 95px;
   }
+  .banner__summary {
+    font-size: 1.5em;
+  }
 }
-.gallery-container {
-  columns: 3;
+.gallery {
+  display: grid;
+  columns: 1;
 }
 .gallery .card {
-  width: 230px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  width: 100%;
   padding: 8px;
   margin-bottom: 15px;
   background: #fff;
   transition: 0.18s transform ease-in;
-  break-inside: avoid;
 }
 .gallery .card:hover {
   transform: scale(1.05);
@@ -1560,6 +1570,24 @@ body {
   color: #ca0000;
 }
 
+@media only screen and (min-width: 34.0625em) {
+  .gallery-container {
+    columns: 2;
+  }
+}
+@media only screen and (min-width: 64.0625em) {
+  .gallery .card {
+    max-width: 230px;
+  }
+  .gallery-container {
+    columns: 3;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+  }
+}
 .sidebar {
   padding: 12px 15px;
   background-color: #a8b4b9;
@@ -1604,41 +1632,9 @@ body {
 /*
 // TODO: Refactor
 @media only screen and (max-width: 64.0625em) {
-  .header {
 
-    &__slogan {
-      display: none;
-    }
-  }
-  .nav {
-    &__link {
-      font-size: $nav-items-mobile;
-    }
-  }
 
-  .content {
-    padding: 0 20px;
 
-    &__feature {
-      margin-top: 30px;
-    }
-
-    &__title {
-      margin-bottom: 20px;
-
-      font-size: $content-title-mobile	;
-      line-height: 1em;
-    }
-
-    &__summary {
-      font-size: $content-summary-mobile;
-    }
-  }
-
-  .gallery {
-    &-container {
-      columns: 2;
-    }
 
     .card {
       width: 100%;
@@ -1651,10 +1647,6 @@ body {
 }
 
 @media only screen and (max-width: 34.0625em) {
-  .header {
-    margin-top: $top-header-phone;
-    margin-bottom: $top-header-phone;
-  }
 
   .gallery {
     &-container {

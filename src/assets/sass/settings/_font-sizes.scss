@@ -1,8 +1,4 @@
 $base-font-size: 1rem !default;
-$content-title: 4em;
-$content-title-mobile: 2.5em;
-$content-summary: 1.5em;
-$content-summary-mobile: 1.2em;
 $article-titles: 1.3em;
 $article-titles-lh: .9em;
 $article-subtitles: .9em;
@@ -11,11 +7,16 @@ $forum-title: .95em;
 $forum-auth: .85em;
 // Font-sizes
 $slogan-font-size: .9em;
-$nav-link-desktop-font-size: .95em;
 $nav-link-font-size: .8em;
-$feature-font-size: .8em;
-$feature-title-font-size: 2.5em;
-$feature-summary-font-size: 1.2em;
+$nav-link-desktop-font-size: .95em;
+$banner-feature-font-size: .8em;
+$banner-title-font-size: 2.5em;
+$banner-title-desktop-font-size: 4em;
+$banner-summary-font-size: 1.2em;
+$banner-summary-desktop-font-size: 1.5em;
+$card-title-font-size: 1.3em;
+$card-title-line-height: .9em;
+$card-content-font-size: .9em;
 // Examples:
 $base-font-size: 16px;
 $header-font-size: 3rem;

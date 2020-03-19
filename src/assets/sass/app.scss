@@ -20,41 +20,9 @@
 /*
 // TODO: Refactor
 @media only screen and (max-width: 64.0625em) {
-  .header {
 
-    &__slogan {
-      display: none;
-    }
-  }
-  .nav {
-    &__link {
-      font-size: $nav-items-mobile;
-    }
-  }
 
-  .content {
-    padding: 0 20px;
 
-    &__feature {
-      margin-top: 30px;
-    }
-
-    &__title {
-      margin-bottom: 20px;
-
-      font-size: $content-title-mobile	;
-      line-height: 1em;
-    }
-
-    &__summary {
-      font-size: $content-summary-mobile;
-    }
-  }
-
-  .gallery {
-    &-container {
-      columns: 2;
-    }
 
     .card {
       width: 100%;
@@ -67,10 +35,6 @@
 }
 
 @media only screen and (max-width: 34.0625em) {
-  .header {
-    margin-top: $top-header-phone;
-    margin-bottom: $top-header-phone;
-  }
 
   .gallery {
     &-container {

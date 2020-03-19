@@ -1,20 +1,22 @@
 .nav {
   display: flex;
 
-  text-shadow: 1px 1px 2px rgba(0,0,0,.2);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
 
   list-style-type: none;
 
   justify-content: space-between;
   &__item {
     color: $text-nav-item-color;
+
+    transition: background .34s ease;
     &:hover {
       background: $text-nav-item-hover-color;
     }
   }
 
   &__link {
-    display: block;
+    display: inline-block;
     padding: 0 10px;
 
     font-size: $nav-link-font-size;
