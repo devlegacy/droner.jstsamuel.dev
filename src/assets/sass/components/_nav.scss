@@ -7,11 +7,11 @@
 
   justify-content: space-between;
   &__item {
-    color: $text-nav-item-color;
+    color: $nav-item-text-color;
 
     transition: background .34s ease;
     &:hover {
-      background: $text-nav-item-hover-color;
+      background: $nav-item-hover-background-color;
     }
   }
 

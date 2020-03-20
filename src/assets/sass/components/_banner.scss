@@ -8,7 +8,6 @@
   // background-attachment: fixed;
   background-size: cover;
   background-position: center center;
-  color: $text-banner-color;
 
   &__feature {
     display: inline-block;
@@ -23,6 +22,11 @@
     text-transform: uppercase;
   }
 
+  &__feature,
+  &__title {
+    color: $banner-text-color;
+  }
+
   &__title {
     margin: 10px 0 20px 0;
 
@@ -34,7 +38,7 @@
   &__summary {
     margin-bottom: 70px;
 
-    color: $text-banner-summary-color;
+    color: $banner-summary-text-color;
 
     font-size: $banner-summary-font-size;
   }

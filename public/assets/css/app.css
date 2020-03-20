@@ -1416,6 +1416,12 @@ body {
   display: block;
 }
 
+@media only screen and (min-width: 64.0625em) {
+  .grid {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+  }
+}
 /* Components layer */
 .header {
   display: grid;
@@ -1496,7 +1502,6 @@ body {
   background: url(/assets/img/hero.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
-  color: #fff;
 }
 .banner__feature {
   display: inline-block;
@@ -1507,6 +1512,9 @@ body {
   font-size: 0.8em;
   line-height: 1.6;
   text-transform: uppercase;
+}
+.banner__feature, .banner__title {
+  color: #fff;
 }
 .banner__title {
   margin: 10px 0 20px 0;
@@ -1537,10 +1545,23 @@ body {
   }
 }
 .gallery {
-  display: grid;
   columns: 1;
 }
 .gallery .card {
+  break-inside: avoid;
+}
+
+@media only screen and (min-width: 34.0625em) {
+  .gallery {
+    columns: 2;
+  }
+}
+@media only screen and (min-width: 64.0625em) {
+  .gallery {
+    columns: 3;
+  }
+}
+.card {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   width: 100%;
   padding: 8px;
@@ -1548,44 +1569,31 @@ body {
   background: #fff;
   transition: 0.18s transform ease-in;
 }
-.gallery .card:hover {
+.card:hover {
   transform: scale(1.05);
 }
-.gallery .card__img {
+.card__img {
   width: 100%;
 }
-.gallery .card__title {
+.card__title {
   display: block;
   margin: 15px 11px 10px 11px;
   color: #223237;
   font-size: 1.3em;
   line-height: 0.9em;
 }
-.gallery .card__content {
+.card__content {
   margin: 15px 11px 10px 11px;
   color: #223237;
   font-size: 0.9em;
 }
-.gallery .card__helper {
+.card__helper {
   color: #ca0000;
 }
 
-@media only screen and (min-width: 34.0625em) {
-  .gallery-container {
-    columns: 2;
-  }
-}
 @media only screen and (min-width: 64.0625em) {
-  .gallery .card {
+  .card {
     max-width: 230px;
-  }
-  .gallery-container {
-    columns: 3;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: 7fr 3fr;
   }
 }
 .sidebar {
@@ -1632,14 +1640,6 @@ body {
 /*
 // TODO: Refactor
 @media only screen and (max-width: 64.0625em) {
-
-
-
-
-    .card {
-      width: 100%;
-    }
-  }
 
   .sidebar {
     margin-top: -30%;
