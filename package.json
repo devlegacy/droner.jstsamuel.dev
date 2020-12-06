@@ -4,7 +4,7 @@
   "description": "Droner project - using powerful of sass",
   "main": "index.js",
   "scripts": {
-    "server": "http-server ./public -a localhost -p 9010 -e -g -o -c-1",
+    "server": "http-server ./public -a localhost -p 8080 -e -g -o -c-1",
     "sass": "sass ./src/assets/sass:./public/assets/css",
     "sass:watch": "npm run sass -- --watch",
     "sass:compile": "npm run sass -- --no-source-map ",
