@@ -732,3 +732,4 @@ $RECYCLE.BIN/
 
 # Custom gitginore
 public/assets/css/*.css
+public/assets/css/*.map
