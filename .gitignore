@@ -421,7 +421,8 @@ buck-out/
 # General
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 
@@ -728,3 +729,6 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/git,vim,node,dart,redis,linux,macos,angular,windows,laravel,flutter,firebase,composer,sublimetext,codeigniter,reactnative,phpstorm+all,visualstudiocode
+
+# Custom gitginore
+public/assets/css/
