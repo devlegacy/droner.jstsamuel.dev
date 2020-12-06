@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "http-server ./public -a localhost -p 8080 -e -g -o -c-1",
-    "sass": "sass ./src/assets/sass:./public/assets/css",
+    "sass": "sass ./src/assets/sass:./public/assets/css --load-path=node_modules",
     "sass:watch": "npm run sass -- --watch",
     "sass:compile": "npm run sass -- --no-source-map ",
     "prefixer": "npx postcss ./public/assets/css/app.css --use autoprefixer -o ./public/assets/css/app.css",
