@@ -8,12 +8,12 @@
     "sass": "sass ./src/assets/sass:./public/assets/css --load-path=node_modules",
     "sass:watch": "npm run sass -- --watch",
     "sass:compile": "npm run sass -- --no-source-map ",
-    "prefixer": "npx postcss ./public/assets/css/app.css --use autoprefixer -o ./public/assets/css/app.css",
-    "nano": "npx postcss ./public/assets/css/app.css --use cssnano -o ./public/assets/css/app.css --no-map",
-    "prefixer:watch": "npm run prefixer -- -w",
-    "prefixer:compile": "npm run prefixer -- --no-map",
+    "postcss:prefixer": "npx postcss ./public/assets/css/app.css --use autoprefixer -o ./public/assets/css/app.css",
+    "postcss:nano": "npx postcss ./public/assets/css/app.css --use cssnano -o ./public/assets/css/app.css --no-map",
+    "prefixer:watch": "npm run postcss:prefixer -- -w",
+    "prefixer:compile": "npm run postcss:prefixer -- --no-map",
     "dev": "npm-run-all --parallel sass:watch server",
-    "prod": "npm-run-all sass:compile prefixer:compile nano"
+    "prod": "npm-run-all sass:compile prefixer:compile postcss:nano"
   },
   "keywords": [],
   "author": "Samuel R. <samuel@devexteam.com> (https://devexteam.com)",
@@ -22,6 +22,7 @@
     "autoprefixer": "^10.0.4",
     "http-server": "^0.12.3",
     "npm-run-all": "^4.1.5",
+    "postcss": "^8.1.14",
     "postcss-cli": "^8.3.0",
     "sass": "^1.30.0"
   },
