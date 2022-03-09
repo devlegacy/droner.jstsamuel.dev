@@ -3,11 +3,11 @@
   0 4px 6px -2px rgba(0, 0, 0, .05);
   width: 100%;
   padding: $card-padding;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 
   background: $card-background-color;
 
-  transition: .18s transform ease-in;
+  transition: .20s transform ease-in;
 
   break-inside: avoid;
   &:hover {
