@@ -32,6 +32,9 @@
     "flexboxgrid": "^6.3.1",
     "normalize.css": "^8.0.1"
   },
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/devlegacy/droner.git"
