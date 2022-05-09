@@ -3,5 +3,7 @@
 
 # Allow crawling of all content
 User-agent: *
-Disallow:
-Sitemap: /sitemap.xml
+Allow: /
+
+Sitemap: https://droner.netlify.app/sitemap.xml
+
