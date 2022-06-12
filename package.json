@@ -4,7 +4,7 @@
   "description": "Droner project - using powerful of sass",
   "main": "index.js",
   "scripts": {
-    "server": "http-server ./public -a localhost -p 8080 -e -g -o -c-1",
+    "server": "http-server ./public -a localhost -p 8080 -e -g -c-1",
     "sass": "sass ./src/assets/sass:./public/assets/css --load-path=node_modules",
     "sass:watch": "npm run sass -- --watch",
     "sass:compile": "npm run sass -- --no-source-map ",
@@ -20,15 +20,15 @@
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^10.4.7",
-    "http-server": "^14.1.0",
+    "http-server": "^14.1.1",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.13",
+    "postcss": "^8.4.14",
     "postcss-cli": "^9.1.0",
-    "sass": "^1.51.0"
+    "sass": "^1.52.3"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.1.1",
-    "cssnano": "^5.1.7",
+    "cssnano": "^5.1.11",
     "flexboxgrid": "^6.3.1",
     "normalize.css": "^8.0.1"
   },
