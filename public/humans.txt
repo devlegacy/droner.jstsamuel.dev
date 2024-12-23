@@ -3,27 +3,16 @@
 
 /* TEAM */
 
-  Frontend developer: Maximiliano Tec Cocom
-  Contact: mtec@devexteam.com
-  Twitter: @maxitec
-  From: Cancún, Quintana Roo, México
-
   Backend developer: Samuel R.
-  Contact: samuel@devexteam.com
-  Twitter: @_samuelrt
-  From: Cancún, Quintana Roo, México
-
-  Project Manager: Nestor Betaza
-  Contact: nbetaza@devexteam.com
-  Twitter: @nexpayne
-  From: Playa del carmen, Salodaridad, México
+  Contact: contact@jstsamuel.dev
+  Twitter: @jstsamuel_
+  From: Quintana Roo, México
 
 /* THANKS */
 
   EN Translator: Demo User
   Twitter: @demouser
   From: Kapiolani, EEUU
-
 
 /* SITE */
 

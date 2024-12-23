@@ -5,5 +5,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://droner.netlify.app/sitemap.xml
+Sitemap: https://droner.jstsamuel.dev/sitemap.xml
 
