@@ -1,27 +1,35 @@
+@use "../../settings/borders";
+@use "../../settings/colors";
+@use "../../settings/margins";
+@use "../../settings/paddings";
+@use "../../settings/widths";
+@use "desktop";
+@use "mobile";
+
 /**
  * Example of columns mixin
  */
 @mixin column($side) {
-  @include mobile {
+  @include mobile.mobile {
     width: 100%;
   }
-  @include desktop {
+  @include desktop.desktop {
     @if $side == 'left' {
-      width: $left-column-width;
-      margin-right: $default-horizontal-margin;
+      width: widths.$left-column-width;
+      margin-right: margins.$default-horizontal-margin;
     }
     @else {
-      width: $right-column-width;
+      width: widths.$right-column-width;
     }
   }
 
   display: inline-block;
-  padding: $default-padding;
-  border: $default-border;
-  border-radius: $border-radius;
+  padding: paddings.$default-padding;
+  border: borders.$default-border;
+  border-radius: borders.$border-radius;
 
-  background-color: $gradient-background-color;
-  color: $default-text-color;
+  background-color: colors.$gradient-background-color;
+  color: colors.$default-text-color;
 
   vertical-align: top;
 }

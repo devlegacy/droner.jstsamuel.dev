@@ -1,20 +1,24 @@
+@use "../settings/colors";
+@use "../settings/font-sizes";
+@use "../settings/margins";
+
 .header {
   display: grid;
   max-width: 100%;
-  margin: $header-vertical-margin auto;
+  margin: margins.$header-vertical-margin auto;
 
   &__slogan {
     display: none;
 
-    color: $slogan-text-color;
+    color: colors.$slogan-text-color;
 
-    font-size: $slogan-font-size;
+    font-size: font-sizes.$slogan-font-size;
   }
 }
 
 @media only screen and (min-width: 34.0625em) {
   .header {
-    margin: $header-mobile-vertical-margin auto;
+    margin: margins.$header-mobile-vertical-margin auto;
   }
 }
 
@@ -26,7 +30,7 @@
 
 @media only screen and (min-width: 64.0625em) {
   .header {
-    margin: $header-desktop-top-margin auto $header-desktop-bottom-margin;
+    margin: margins.$header-desktop-top-margin auto margins.$header-desktop-bottom-margin;
 
     &__slogan {
       display: block;

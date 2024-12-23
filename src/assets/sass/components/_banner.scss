@@ -1,3 +1,6 @@
+@use "../settings/colors";
+@use "../settings/font-sizes";
+
 .banner {
   width: 100%;
   height: 550px;
@@ -15,22 +18,22 @@
     margin-top: 30px;
     margin-bottom: 0;
 
-    background: $banner-feature-background-color;
+    background: colors.$banner-feature-background-color;
 
-    font-size: $banner-feature-font-size;
+    font-size: font-sizes.$banner-feature-font-size;
     line-height: 1.6;
     text-transform: uppercase;
   }
 
   &__feature,
   &__title {
-    color: $banner-text-color;
+    color: colors.$banner-text-color;
   }
 
   &__title {
     margin: 10px 0 20px 0;
 
-    font-size: $banner-title-font-size;
+    font-size: font-sizes.$banner-title-font-size;
     font-weight: 300;
     line-height: 1em;
   }
@@ -38,9 +41,9 @@
   &__summary {
     margin-bottom: 70px;
 
-    color: $banner-summary-text-color;
+    color: colors.$banner-summary-text-color;
 
-    font-size: $banner-summary-font-size;
+    font-size: font-sizes.$banner-summary-font-size;
   }
 }
 
@@ -51,7 +54,7 @@
     &__title {
       margin: 10px 0;
 
-      font-size: $banner-title-desktop-font-size;
+      font-size: font-sizes.$banner-title-desktop-font-size;
       line-height: 1.15;
     }
 
@@ -60,7 +63,7 @@
     }
 
     &__summary {
-      font-size: $banner-summary-desktop-font-size;
+      font-size: font-sizes.$banner-summary-desktop-font-size;
     }
   }
 }

@@ -1,23 +1,30 @@
+@use "../../settings/borders";
+@use "../../settings/colors";
+@use "../../settings/font-sizes";
+@use "../../settings/margins";
+@use "../../settings/paddings";
+@use "../../settings/widths";
+
 /**
  * Example of buttons mixin
  */
 @mixin button {
   display: inline-block;
-  min-width: $minimum-button-width;
-  padding: $default-padding;
-  border: $default-border;
-  border-radius: $border-radius;
-  margin: 0 $default-horizontal-margin $default-vertical-margin $default-horizontal-margin;
+  min-width: widths.$minimum-button-width;
+  padding: paddings.$default-padding;
+  border: borders.$default-border;
+  border-radius: borders.$border-radius;
+  margin: 0 margins.$default-horizontal-margin margins.$default-vertical-margin margins.$default-horizontal-margin;
 
-  background-color: $button-face-color;
-  color: $default-text-color;
+  background-color: colors.$button-face-color;
+  color: colors.$default-text-color;
 
-  font-size: $base-font-size;
+  font-size: font-sizes.$base-font-size;
   text-decoration: none;
 
   &:hover {
-    background-color: $button-hover-background-color;
-    color: $alternate-text-color;
+    background-color: colors.$button-hover-background-color;
+    color: colors.$alternate-text-color;
 
     cursor: pointer;
   }

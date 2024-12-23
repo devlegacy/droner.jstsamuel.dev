@@ -1,5 +1,7 @@
+@use "../../settings/widths";
+
 @mixin desktop {
-  @media screen and (min-width: #{$mobile-breakpoint-width + 1}) {
+  @media screen and (min-width: #{widths.$mobile-breakpoint-width + 1}) {
     @content;
   }
 }

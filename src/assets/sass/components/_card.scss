@@ -1,11 +1,16 @@
+@use "../settings/colors";
+@use "../settings/font-sizes";
+@use "../settings/margins";
+@use "../settings/paddings";
+
 .card {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1),
   0 4px 6px -2px rgba(0, 0, 0, .05);
   width: 100%;
-  padding: $card-padding;
+  padding: paddings.$card-padding;
   margin-bottom: 18px;
 
-  background: $card-background-color;
+  background: colors.$card-background-color;
 
   transition: .18s transform ease-in;
 
@@ -20,24 +25,24 @@
 
   &__title {
     display: block;
-    margin: $card-text-inner-margin;
+    margin: margins.$card-text-inner-margin;
 
-    color: $card-title-text-color;
+    color: colors.$card-title-text-color;
 
-    font-size: $card-title-font-size;
-    line-height: $card-title-line-height;
+    font-size: font-sizes.$card-title-font-size;
+    line-height: font-sizes.$card-title-line-height;
   }
 
   &__content {
-    margin: $card-text-inner-margin;
+    margin: margins.$card-text-inner-margin;
 
-    color: $card-content-text-color;
+    color: colors.$card-content-text-color;
 
-    font-size: $card-content-font-size;
+    font-size: font-sizes.$card-content-font-size;
   }
 
   &__helper {
-    color: $card-helper-text-color;
+    color: colors.$card-helper-text-color;
   }
 }
 

@@ -2,10 +2,10 @@
  * Remember use cascade flow
  * We net colors before borders
  */
-@import './colors';
-@import './borders';
-@import './font-family';
-@import './font-sizes';
-@import './margins';
-@import './paddings';
-@import './widths';
+@use 'colors';
+@use 'borders';
+@use 'font-family';
+@use 'font-sizes';
+@use 'margins';
+@use 'paddings';
+@use 'widths';

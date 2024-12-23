@@ -1,7 +1,11 @@
+@use "../settings/colors";
+@use "../settings/font-family";
+@use "../settings/font-sizes";
+
 body {
   // overflow-x: hidden;
-  background: $background-color;
+  background: colors.$background-color;
 
-  font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-family: font-family.$base-font-family;
+  font-size: font-sizes.$base-font-size;
 }

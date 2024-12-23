@@ -1,3 +1,7 @@
+@use "../settings/colors";
+@use "../settings/font-sizes";
+@use "../settings/paddings";
+
 .nav {
   display: flex;
 
@@ -7,11 +11,11 @@
 
   justify-content: space-between;
   &__item {
-    color: $nav-item-text-color;
+    color: colors.$nav-item-text-color;
 
     transition: background .34s ease;
     &:hover {
-      background: $nav-item-hover-background-color;
+      background: colors.$nav-item-hover-background-color;
     }
   }
 
@@ -19,7 +23,7 @@
     display: inline-block;
     padding: 0 10px;
 
-    font-size: $nav-link-font-size;
+    font-size: font-sizes.$nav-link-font-size;
     text-align: center;
     text-transform: uppercase;
   }
@@ -42,7 +46,7 @@
     justify-content: flex-end;
 
     &__link {
-      padding: $nav-spacing-padding;
+      padding: paddings.$nav-spacing-padding;
     }
   }
 }
@@ -50,7 +54,7 @@
 @media only screen and (min-width: 64.0625em) {
   .nav {
     &__link {
-      font-size: $nav-link-desktop-font-size;
+      font-size: font-sizes.$nav-link-desktop-font-size;
     }
   }
 }

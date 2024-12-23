@@ -1,4 +1,6 @@
+@use "../settings/font-sizes";
+
 // Example
 #btn-search-characters-by-name {
-  font-size: $base-font-size;
+  font-size: font-sizes.$base-font-size;
 }

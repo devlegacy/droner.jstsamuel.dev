@@ -1,5 +1,5 @@
-@import './normalize';
+@use 'normalize';
 // https://css-tricks.com/box-sizing/#universal-box-sizing-with-inheritance
-@import './reset';
-@import './universal';
-@import './fonts/fonts';
+@use 'reset';
+@use 'universal';
+@use 'fonts/fonts';

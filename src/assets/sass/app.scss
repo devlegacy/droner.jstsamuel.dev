@@ -1,21 +1,21 @@
 @charset 'UTF-8';
 
 /* Settings layer */
-@import './settings/settings';
+@use 'settings/settings';
 /* Tools layer */
-@import './tools/tools';
+@use 'tools/tools';
 /* Generics layer */
-@import './generic/generics';
+@use 'generic/generics';
 /* Elements layer */
-@import './elements/elements';
+@use 'elements/elements';
 /* Objects layer */
-@import './objects/objects';
+@use 'objects/objects';
 /* Components layer */
-@import './components/components';
+@use 'components/components';
 /* Third-party layer */
-@import './vendors/vendors';
+@use 'vendors/vendors';
 /* Trumps layer */
-@import './trumps/trumps';
+@use 'trumps/trumps';
 
 /*
 // TODO: Refactor

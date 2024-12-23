@@ -1,5 +1,7 @@
+@use "../../settings/widths";
+
 @mixin mobile {
-  @media screen and (max-width: #{$mobile-breakpoint-width}) {
+  @media screen and (max-width: #{widths.$mobile-breakpoint-width}) {
     @content;
   }
 }
