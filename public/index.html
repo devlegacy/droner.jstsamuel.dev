@@ -39,6 +39,39 @@
       content="/opengraph-1200x1200.jpg"
       itemprop="image"
     />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://jstsamuel.dev/#website",
+            "url": "https://jstsamuel.dev/",
+            "name": "Samuel's Website",
+            "description": "Software developer.",
+            "publisher": {
+              "@id": "https://jstsamuel.dev/#person"
+            },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://jstsamuel.dev/search?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://jstsamuel.dev/#person",
+            "name": "Samuel R.",
+            "description": "Software developer.",
+            "url": "https://jstsamuel.dev/",
+            "image": "https://gravatar.com/avatar/c8065e0cf28d9f31e32085efd88dedc0?size=1200",
+            "sameAs": [
+              "https://twitter.com/jstsamuel_"
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <header class="container header">
@@ -347,38 +380,5 @@
         </div>
       </main>
     </section>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "WebSite",
-            "@id": "https://jstsamuel.dev/#website",
-            "url": "https://jstsamuel.dev/",
-            "name": "Samuel's Website",
-            "description": "Software developer.",
-            "publisher": {
-              "@id": "https://jstsamuel.dev/#person"
-            },
-            "potentialAction": {
-              "@type": "SearchAction",
-              "target": "https://jstsamuel.dev/search?q={search_term_string}",
-              "query-input": "required name=search_term_string"
-            }
-          },
-          {
-            "@type": "Person",
-            "@id": "https://jstsamuel.dev/#person",
-            "name": "Samuel R.",
-            "description": "Software developer.",
-            "url": "https://jstsamuel.dev/",
-            "image": "https://gravatar.com/avatar/c8065e0cf28d9f31e32085efd88dedc0?size=1200",
-            "sameAs": [
-              "https://twitter.com/jstsamuel_"
-            ]
-          }
-        ]
-      }
-      </script>
   </body>
 </html>
