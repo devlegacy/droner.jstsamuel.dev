@@ -350,22 +350,35 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebSite",
-        "url": "https://jstsamuel.dev/"
-      }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Samuel R.",
-        "description": "Desarrollo de experiencias.",
-        "url": "https://jstsamuel.dev/",
-        "image": "https://gravatar.com/avatar/c8065e0cf28d9f31e32085efd88dedc0?size=1200",
-        "sameAs": [
-          "https://twitter.com/jstsamuel_"
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://jstsamuel.dev/#website",
+            "url": "https://jstsamuel.dev/",
+            "name": "Samuel's Website",
+            "description": "Software developer.",
+            "publisher": {
+              "@id": "https://jstsamuel.dev/#person"
+            },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://jstsamuel.dev/search?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://jstsamuel.dev/#person",
+            "name": "Samuel R.",
+            "description": "Software developer.",
+            "url": "https://jstsamuel.dev/",
+            "image": "https://gravatar.com/avatar/c8065e0cf28d9f31e32085efd88dedc0?size=1200",
+            "sameAs": [
+              "https://twitter.com/jstsamuel_"
+            ]
+          }
         ]
       }
-    </script>
+      </script>
   </body>
 </html>
