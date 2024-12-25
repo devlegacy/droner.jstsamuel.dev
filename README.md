@@ -1,6 +1,23 @@
 # Drone web page
 
-[Course - ITCSS](https://www.pluralsight.com/courses/inverted-triangle-css-intro)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dbd63aa5-90b7-400d-af9d-65933675aae7/deploy-status)](https://app.netlify.com/sites/droner/deploys)   
+
+[Course - ITCSS](https://www.pluralsight.com/courses/inverted-triangle-css-intro)   
+
+- [Specificity Calculator](https://specificity.keegan.st/)
+
+## ITCSS
+
+- settings (variables): variables, breakpoints
+- tools: mixins, helper functions
+---- css generation start here ----
+- generic: reset.css, normalize.css, third-party (less/low specifity, no classes)
+- elements: base layer, bare html elements, plain unclassed elements
+---- class generation start here ----
+- objects: reusable design patterns, layout, grid, media object
+  - font awesome (in a non rigid way)
+- components: specific UI components, buttons, cards, navbars
+- trumps: utility classes, helpers, overrides, elements with high specificity, ID selectors and !important
 
 ## GitHub Pages deployment
 
