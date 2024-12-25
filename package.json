@@ -6,7 +6,7 @@
   "scripts": {
     "server": "http-server ./public -a localhost -p 8080 -e -g -c-1",
     "sass": "sass ./src/assets/sass:./public/assets/css --load-path=node_modules",
-    "sass:watch": "npm run sass -- --watch",
+    "sass:watch": "npm run sass -- --watch --verbose",
     "sass:compile": "npm run sass -- --no-source-map ",
     "postcss:prefixer": "npx postcss ./public/assets/css/app.css --use autoprefixer -o ./public/assets/css/app.css",
     "postcss:nano": "npx postcss ./public/assets/css/app.css --use cssnano -o ./public/assets/css/app.css --no-map",
@@ -42,5 +42,6 @@
   "bugs": {
     "url": "https://github.com/devlegacy/droner/issues"
   },
-  "homepage": "https://github.com/devlegacy/droner#readme"
+  "homepage": "https://github.com/devlegacy/droner#readme",
+  "packageManager": "pnpm@9.15.1+sha512.1acb565e6193efbebda772702950469150cf12bcc764262e7587e71d19dc98a423dff9536e57ea44c49bdf790ff694e83c27be5faa23d67e0c033b583be4bfcf"
 }
