@@ -43,57 +43,55 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebSite",
-        "@id": "https://jstsamuel.dev/#website",
-        "url": "https://jstsamuel.dev/",
-        "name": "Samuel's Website",
-        "description": "Software developer.",
-        "inLanguage": "en",
-        "publisher": {
-          "@id": "https://jstsamuel.dev/#person"
-        },
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://jstsamuel.dev/search?&q={query}",
-          "query": "required"
-        }
-      }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "@id": "https://jstsamuel.dev/#person",
-        "name": "Samuel R.",
-        "description": "Software developer.",
-        "url": "https://jstsamuel.dev/",
-        "image": {
-          "@type": "ImageObject",
-          "url": "https://gravatar.com/avatar/c8065e0cf28d9f31e32085efd88dedc0?size=300",
-          "width": 300,
-          "height": 300
-        },
-        "email": "mailto:contact@jstsamuel.dev"
-      }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "@id": "https://jstsamuel.dev/#organization",
-        "name": "jstsamuel.dev",
-        "url": "https://jstsamuel.dev/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://gravatar.com/avatar/c8065e0cf28d9f31e32085efd88dedc0?size=600",
-          "width": 600,
-          "height": 600
-        },
-        "description": "A software development brand created by Samuel R.",
-        "foundingDate": "2016-01-01",
-        "founders": [
+        "@graph": [
           {
-            "@id": "https://jstsamuel.dev/#person"
+            "@type": "WebSite",
+            "@id": "https://jstsamuel.dev/#website",
+            "url": "https://jstsamuel.dev/",
+            "name": "Samuel's Website",
+            "description": "Software developer.",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://jstsamuel.dev/#person"
+            },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://jstsamuel.dev/search?&q={query}",
+              "query": "required"
+            }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://jstsamuel.dev/#person",
+            "name": "Samuel R.",
+            "description": "Software developer.",
+            "url": "https://jstsamuel.dev/",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://gravatar.com/avatar/c8065e0cf28d9f31e32085efd88dedc0?size=300",
+              "width": 300,
+              "height": 300
+            },
+            "email": "mailto:contact@jstsamuel.dev"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://jstsamuel.dev/#organization",
+            "name": "jstsamuel.dev",
+            "url": "https://jstsamuel.dev/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://gravatar.com/avatar/c8065e0cf28d9f31e32085efd88dedc0?size=600",
+              "width": 600,
+              "height": 600
+            },
+            "description": "A software development brand created by Samuel R.",
+            "foundingDate": "2016-01-01",
+            "founders": [
+              {
+                "@id": "https://jstsamuel.dev/#person"
+              }
+            ]
           }
         ]
       }
