@@ -2,4 +2,4 @@
 # Our security address
 
 Contact: contact@jstsamuel.dev
-# Encryption: https://devexteam.com/pgp-key.txt
+# Encryption: https://jstsamuel.dev/pgp-key.txt
