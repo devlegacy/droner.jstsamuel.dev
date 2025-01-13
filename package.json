@@ -2,7 +2,6 @@
   "name": "droner",
   "version": "0.0.1",
   "description": "Droner project - using powerful of sass",
-  "main": "index.js",
   "scripts": {
     "server": "http-server ./public -a localhost -p 8080 -e -g -c-1",
     "sass": "sass ./src/assets/sass:./public/assets/css --load-path=node_modules",
@@ -24,7 +23,7 @@
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.49",
     "postcss-cli": "^11.0.0",
-    "sass": "^1.83.0"
+    "sass": "^1.83.1"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
@@ -42,6 +41,5 @@
   "bugs": {
     "url": "https://github.com/devlegacy/droner/issues"
   },
-  "homepage": "https://github.com/devlegacy/droner#readme",
-  "packageManager": "pnpm@9.15.1+sha512.1acb565e6193efbebda772702950469150cf12bcc764262e7587e71d19dc98a423dff9536e57ea44c49bdf790ff694e83c27be5faa23d67e0c033b583be4bfcf"
+  "homepage": "https://github.com/devlegacy/droner#readme"
 }
