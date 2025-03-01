@@ -22,7 +22,7 @@
   Last update: 2023/05/06
   Standards: HTML5, CSS3/SCSS
   CSS Architecture: ITCSS (Inverted Triangle CSS)
-  Language: Spanish / English
+  Language: English / Spanish
   Software: Git, NPM, NodeJS, Sass
   Doctype: HTML5
   IDE: Visual Studio Code
