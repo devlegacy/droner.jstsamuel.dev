@@ -6,4 +6,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://droner.jstsamuel.dev/sitemap.xml
-
