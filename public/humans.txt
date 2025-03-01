@@ -14,13 +14,25 @@
   Twitter: @demouser
   From: Kapiolani, EEUU
 
+  Icons by: Freepik
+  Website: https://www.flaticon.es/autores/freepik
+  From: www.flaticon.es
 /* SITE */
 
-  Last update: 2018/07/05
-  Standards: HTML5, CSS3
+  Last update: 2023/05/06
+  Standards: HTML5, CSS3/SCSS
+  CSS Architecture: ITCSS (Inverted Triangle CSS)
   Language: Spanish / English
-  Software: Git, FileZilla, XAMPP, Git-bash, NPM, NodeJS
+  Software: Git, NPM, NodeJS, Sass
   Doctype: HTML5
-  IDE: Visual Studio Code,Adobe XD, Invision
-  Components: flexboxgrid, normalize.css
+  IDE: Visual Studio Code
+  Components: flexboxgrid, normalize.css, Font Awesome
+  Hosting: Netlify
+  Repository: https://github.com/devlegacy/droner
 
+/* BUILD TOOLS */
+
+  Task Runner: NPM Scripts
+  CSS Processor: Sass
+  CSS Post-processing: PostCSS, Autoprefixer, cssnano
+  Development Server: http-server
