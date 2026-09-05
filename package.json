@@ -32,7 +32,8 @@
     "normalize.css": "8.0.1"
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=24",
+    "pnpm": ">=11"
   },
   "repository": {
     "type": "git",
