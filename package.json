@@ -18,16 +18,16 @@
   "author": "Samuel R. <contact@jstsamuel.dev> (https://jstsamuel.dev)",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "10.4.24",
+    "autoprefixer": "10.5.4",
     "http-server": "14.1.1",
     "npm-run-all": "4.1.5",
-    "postcss": "8.5.6",
+    "postcss": "8.5.26",
     "postcss-cli": "11.0.1",
-    "sass": "1.97.3"
+    "sass": "1.103.1"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "7.1.0",
-    "cssnano": "7.1.2",
+    "@fortawesome/fontawesome-free": "7.3.1",
+    "cssnano": "9.0.1",
     "flexboxgrid": "6.3.1",
     "normalize.css": "8.0.1"
   },
@@ -42,5 +42,5 @@
     "url": "https://github.com/devlegacy/droner/issues"
   },
   "homepage": "https://github.com/devlegacy/droner#readme",
-  "packageManager": "pnpm@10.28.2+sha512.41872f037ad22f7348e3b1debbaf7e867cfd448f2726d9cf74c08f19507c31d2c8e7a11525b983febc2df640b5438dee6023ebb1f84ed43cc2d654d2bc326264"
+  "packageManager": "pnpm@12.3.4+sha512.961aa41fb077da3a04a441d9f8e15ebc0c96da8ef710b2eb67bf9ee7cb0610eabd48f1fd85f51cffe73846785fa0f87c56a3a872a1d893f8446741b5cce45457"
 }
