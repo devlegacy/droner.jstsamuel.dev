@@ -2,7 +2,7 @@
 
 [![Droner — drone-news landing page](public/opengraph-1280x640.jpg)](https://droner.jstsamuel.dev)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/dbd63aa5-90b7-400d-af9d-65933675aae7/deploy-status)](https://app.netlify.com/sites/droner/deploys)   
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dbd63aa5-90b7-400d-af9d-65933675aae7/deploy-status)](https://app.netlify.com/sites/droner/deploys) [![LinkedIn Project](https://img.shields.io/badge/LinkedIn-Project%20Card-0A66C2)](https://www.linkedin.com/in/jstsamuel/details/projects/)   
 
 [Course - ITCSS](https://www.pluralsight.com/courses/inverted-triangle-css-intro)   
 
