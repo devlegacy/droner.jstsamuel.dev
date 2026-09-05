@@ -1,5 +1,6 @@
 {
-  "name": "droner",
+  "name": "droner.jstsamuel.dev",
+  "private": true,
   "version": "0.0.1",
   "description": "Droner project - using powerful of sass",
   "scripts": {
