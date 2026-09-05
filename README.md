@@ -1,4 +1,6 @@
-# Drone web page
+# Droner
+
+[![Droner — drone-news landing page](public/opengraph-1200x640.jpg)](https://droner.jstsamuel.dev)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/dbd63aa5-90b7-400d-af9d-65933675aae7/deploy-status)](https://app.netlify.com/sites/droner/deploys)   
 
