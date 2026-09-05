@@ -1,10 +1,10 @@
 // Configure the shared variables module first (must be loaded before any FA sub-module)
 @use '@fortawesome/fontawesome-free/scss/variables' with (
-  $font-path: 'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/webfonts'
+  $font-path: 'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/webfonts',
+  $font-display: swap
 );
 
+// Only the solid style (fas fa-*) is used on the site; brands/regular/v4-shims
+// add unused CSS and extra webfont downloads.
 @use '@fortawesome/fontawesome-free/scss/fontawesome';
-@use '@fortawesome/fontawesome-free/scss/brands';
-@use '@fortawesome/fontawesome-free/scss/regular';
 @use '@fortawesome/fontawesome-free/scss/solid';
-@use '@fortawesome/fontawesome-free/scss/v4-shims';

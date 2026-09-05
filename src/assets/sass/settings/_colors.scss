@@ -8,6 +8,7 @@ $guardsman-red: #ca0000;
 $hit-gray: #a8b4b9;
 $white: #fff;
 $mako: #414a4f;
+$outer-space: #3a4247; // darkest text that keeps WCAG AA (4.5:1) on $hit-gray
 $madison: #082c5c;
 $haiti: #0e0a23;
 $loulou: #4a113c;
@@ -44,4 +45,4 @@ $card-title-text-color: $bony-clay;
 $card-content-text-color: $bony-clay;
 $card-helper-text-color: $guardsman-red;
 // Sidebar
-$sidebar-span-text-color: $mako;
+$sidebar-span-text-color: $outer-space;
