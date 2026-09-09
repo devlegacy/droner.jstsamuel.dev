@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "7.3.1",
-    "cssnano": "9.0.1",
+    "cssnano": "9.0.2",
     "flexboxgrid": "6.3.1",
     "normalize.css": "8.0.1"
   },
@@ -44,5 +44,5 @@
     "url": "https://github.com/devlegacy/droner.jstsamuel.dev/issues"
   },
   "homepage": "https://droner.jstsamuel.dev",
-  "packageManager": "pnpm@11.25.0+sha512.5cde925b4f075f725eb71fbae18a42ffe784524789f19b61c731cb8721ec28aaee160e01a8d5af4fedb2a42cdbf300efe23db356b0d4a17b4d63e11f8ab7c956"
+  "packageManager": "pnpm@12.2.1"
 }
