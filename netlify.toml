@@ -6,3 +6,11 @@
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+# Send the *.netlify.app deploy URL to the canonical domain so the site is not
+# served as a live duplicate under two hostnames.
+[[redirects]]
+  from = "https://droner.netlify.app/*"
+  to = "https://droner.jstsamuel.dev/:splat"
+  status = 301
+  force = true
